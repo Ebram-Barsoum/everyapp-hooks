@@ -1,0 +1,66 @@
+{
+  "name": "everyapp-hooks",
+  "version": "1.0.0",
+  "description": "A collection of useful React hooks for everyapp development",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "release": "changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ebram-Barsoum/everyapp-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ebram-Barsoum/everyapp-hooks/issues"
+  },
+  "homepage": "https://github.com/Ebram-Barsoum/everyapp-hooks#readme",
+  "keywords": [
+    "react",
+    "hooks",
+    "typescript",
+    "everyapp-hooks"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Ebram Barsoum",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^8.0.5",
+    "@babel/preset-env": "^8.0.5",
+    "@babel/preset-react": "^8.0.1",
+    "@babel/preset-typescript": "^8.0.1",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.3.0",
+    "babel-jest": "^30.5.1",
+    "eslint-plugin-tsdoc": "^0.5.2",
+    "jest": "^30.5.1",
+    "jest-environment-jsdom": "^30.5.1",
+    "react": "*",
+    "react-dom": "^19.3.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "react": "^19.3.0"
+  }
+}
