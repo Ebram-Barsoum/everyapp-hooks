@@ -8,12 +8,12 @@ concurrency: ${{github.workflow}}-${{github.ref}} # prevents overlapping runs of
 
 jobs:
   release:
-    runs-on: ubuton-latest
+    runs-on: ubuntu-latest
 
     permissions:
       contents: write
-      pull_requests: write
-      id-tokens: write # needed for npm provenance
+      pull-requests: write
+      id-token: write # needed for npm provenance
 
     steps:
       - uses: actions/checkout@v4
