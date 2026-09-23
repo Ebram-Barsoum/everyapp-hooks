@@ -18,9 +18,9 @@ pnpm add everyapp-hooks
 
 ### Requirements
 
-| Requirement | Version   |
-| ----------- | --------- |
-| React       | `^19.3.0` |
+| Requirement | Version |
+| ----------- | ------- |
+| React       | `>=19`  |
 
 All hooks use browser APIs (`window`, `document`, `IntersectionObserver`, …). In Next.js or any other SSR framework, use them only inside Client Components (`"use client"`).
 
