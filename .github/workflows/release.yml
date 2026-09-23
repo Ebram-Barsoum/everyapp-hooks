@@ -22,9 +22,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
-          registery-url: ""
+          registry-url: "https://registry.npmjs.org"
 
       - run: npm ci
       - run: npm run typecheck
